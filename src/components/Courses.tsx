@@ -9,44 +9,81 @@ const Courses = () => {
   
   const courses = [
     {
-      title: "Advanced React Development",
-      about: "In-depth React concepts with modern patterns and state management techniques",
-      year: "2022",
-      skills: ["React Hooks", "Context API", "Redux", "React Router", "Next.js"],
-      color: "from-purple-500/20 to-pink-500/20",
-      icon: <Gift className="h-6 w-6 text-purple-500" />
+      title: "Data Structures & Algorithms",
+      about: "Covered arrays, trees, sorting algorithms, and graph theory.",
+      year: "2024",
+      color: "from-green-500/20 to-blue-500/20",
+      icon: <Gift className="h-6 w-6 text-green-500" />
     },
     {
-      title: "The Complete JavaScript Course",
-      about: "Comprehensive JavaScript from fundamentals to advanced concepts",
-      year: "2021",
-      skills: ["ES6+", "Asynchronous JS", "OOP", "Functional Programming", "Modern JS Development"],
-      color: "from-amber-500/20 to-yellow-500/20",
-      icon: <BookOpen className="h-6 w-6 text-amber-500" />
+      title: "Mobile Application and Development",
+      about: "Explored tools and principles for designing and building mobile applications.",
+      year: "2024",
+      color: "from-orange-500/20 to-red-400/20",
+      icon: <Award className="h-6 w-6 text-orange-500" />
     },
     {
-      title: "TypeScript: The Complete Developer's Guide",
-      about: "Deep dive into TypeScript with practical examples and applications",
-      year: "2022",
-      skills: ["TypeScript Basics", "Types & Interfaces", "Generics", "Type Guards", "Advanced Types"],
-      color: "from-blue-500/20 to-sky-500/20",
+      title: "Advanced Database Organization",
+      about: "Focused on efficient data storage, retrieval, and indexing techniques.",
+      year: "2024",
+      color: "from-yellow-400/20 to-blue-400/20",
+      icon: <BookOpen className="h-6 w-6 text-yellow-400" />
+    },
+    {
+      title: "Software Project Management",
+      about: "Learned project planning, scheduling, and team coordination for software projects.",
+      year: "2024",
+      color: "from-red-500/20 to-yellow-500/20",
+      icon: <Award className="h-6 w-6 text-red-500" />
+    },
+    {
+      title: "Big Data Technology",
+      about: "Handled large-scale data sets and processing with big data frameworks.",
+      year: "2024",
+      color: "from-blue-500/20 to-green-400/20",
+      icon: <Gift className="h-6 w-6 text-blue-500" />
+    },
+    {
+      title: "Computer Networks",
+      about: "Studied OSI model, TCP/IP, routing, and communication protocols.",
+      year: "2023",
+      color: "from-cyan-500/20 to-teal-400/20",
+      icon: <BookOpen className="h-6 w-6 text-cyan-500" />
+    },
+    {
+      title: "Software Engineering",
+      about: "Understood software development principles and engineering methodologies.",
+      year: "2024",
+      color: "from-emerald-500/20 to-lime-400/20",
+      icon: <Award className="h-6 w-6 text-emerald-500" />
+    },
+    {
+      title: "Web Application",
+      about: "Built web-based applications using modern frontend/backend technologies.",
+      year: "2024",
+      color: "from-indigo-500/20 to-sky-400/20",
+      icon: <Gift className="h-6 w-6 text-indigo-500" />
+    },
+    {
+      title: "Science of Programming",
+      about: "Learned foundational programming concepts and techniques.",
+      year: "2024",
+      color: "from-blue-500/20 to-indigo-400/20",
       icon: <Award className="h-6 w-6 text-blue-500" />
     },
     {
-      title: "CSS Flexbox & Grid Mastery",
-      about: "Modern CSS layout techniques for responsive designs",
-      year: "2021",
-      skills: ["Flexbox Layouts", "CSS Grid", "Responsive Design", "Modern CSS", "CSS Variables"],
-      color: "from-green-500/20 to-emerald-500/20",
+      title: "Data Preparation and Analysis",
+      about: "Worked on manipulating and transforming data for analysis and insights.",
+      year: "2025",
+      color: "from-green-500/20 to-teal-300/20",
       icon: <BookOpen className="h-6 w-6 text-green-500" />
     },
     {
-      title: "UI/UX Design Fundamentals",
-      about: "Creating user-centered designs with focus on usability and accessibility",
-      year: "2023",
-      skills: ["User Research", "Wireframing", "Prototyping", "Design Systems", "Accessibility"],
-      color: "from-red-500/20 to-rose-500/20",
-      icon: <Award className="h-6 w-6 text-red-500" />
+      title: "Software Quality Management",
+      about: "Focused on SDLC, testing methods, and quality assurance practices.",
+      year: "2024",
+      color: "from-amber-400/20 to-yellow-400/20",
+      icon: <Award className="h-6 w-6 text-amber-400" />
     }
   ];
 
@@ -54,7 +91,7 @@ const Courses = () => {
   const handleCardClick = (index: number) => {
     toast({
       title: `🎉 ${courses[index].title}`,
-      description: "That's an awesome course you've completed!",
+      description: "This course I've completed!",
       duration: 3000,
     });
   };
@@ -84,7 +121,7 @@ const Courses = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-display font-bold mb-4 text-gradient relative inline-block">
-            Courses & Training
+            Courses
             <span className="absolute -right-4 -top-2 animate-bounce-slight" style={{ animationDelay: '0.5s' }}>🎓</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -121,24 +158,7 @@ const Courses = () => {
                     <Calendar className="h-4 w-4 mr-2" />
                     <span>{course.year}</span>
                   </div>
-                  
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {course.skills.slice(0, 3).map((skill, i) => (
-                      <span 
-                        key={i} 
-                        className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary
-                                   transition-all duration-300 group-hover:bg-primary/20"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                    {course.skills.length > 3 && (
-                      <span className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground
-                                      transition-all duration-300 group-hover:bg-muted/80">
-                        +{course.skills.length - 3} more
-                      </span>
-                    )}
-                  </div>
+                
                   
                   {/* Decorative corner */}
                   <div className="absolute top-0 right-0 w-12 h-12 overflow-hidden">

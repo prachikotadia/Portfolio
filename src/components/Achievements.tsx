@@ -6,32 +6,42 @@ const Achievements = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
   
+
   const achievements = [
     {
-      title: "Marathon Champion",
-      event: "City Marathon 2022",
-      description: "Completed a full marathon in under 3 hours, ranking in the top 5% of all participants.",
-      icon: <Trophy className="h-8 w-8" />,
-      color: "from-[#FFD700]/30 to-[#FFA500]/30",
-      image: "/placeholder.svg"
+      title: "State Level Karate Championship",
+      event: "2ND RUNNER-UP",
+      description: "Gujarat, India - 2015",
+      icon: <Trophy className="h-8 w-8 text-yellow-400" />,
+      color: "from-[#FF6B6B]/30 to-[#8E44AD]/30",
+      image: "https://i.ebayimg.com/images/g/mGEAAOSwTGlmFRuy/s-l1600.webp"
     },
     {
-      title: "Basketball MVP",
-      event: "Regional League 2021",
-      description: "Named Most Valuable Player in the regional basketball league, leading the team to championship victory.",
-      icon: <Award className="h-8 w-8" />,
-      color: "from-[#FF6B6B]/30 to-[#FF8E53]/30",
-      image: "/placeholder.svg"
+      title: "State Level 400m Athletics",
+      event: "1ST PLACE",
+      description: "Gujarat, India - 2016",
+      icon: <Trophy className="h-8 w-8 text-yellow-400" />,
+      color: "from-[#FF6B6B]/30 to-[#8E44AD]/30",
+      image: "https://storage.googleapis.com/pod_public/1300/128034.jpg"
     },
     {
-      title: "Swimming Gold Medalist",
-      event: "University Championship",
-      description: "Won gold medal in 200m freestyle swimming competition, breaking the university record.",
-      icon: <Medal className="h-8 w-8" />,
-      color: "from-[#4E95FF]/30 to-[#73E0E0]/30",
-      image: "/placeholder.svg"
+      title: "State Level 5000m Athletics",
+      event: "1ST PLACE",
+      description: "Gujarat, India - 2016",
+      icon: <Trophy className="h-8 w-8 text-yellow-400" />,
+      color: "from-[#FF6B6B]/30 to-[#8E44AD]/30",
+      image: "https://images.creativefabrica.com/products/previews/2023/10/28/syA9HyTtV/2XMuZyR5CPZTSHtdx3ehxzlu0lW-desktop.jpg"
+    },
+    {
+      title: "District Level Kabaddi Championship",
+      event: "CHAMPION",
+      description: "Gujarat, India - 2014",
+      icon: <Trophy className="h-8 w-8 text-yellow-400" />,
+      color: "from-[#FF6B6B]/30 to-[#8E44AD]/30",
+      image: "https://img.freepik.com/premium-vector/kabaddi-playing-illustration_1133271-7321.jpg?w=1380"
     }
   ];
+  
   
   // Auto-slide functionality
   useEffect(() => {

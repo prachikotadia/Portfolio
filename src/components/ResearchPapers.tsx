@@ -9,42 +9,34 @@ const ResearchPapers = () => {
   
   const papers = [
     {
-      title: "Deep Learning Approaches to Neural Language Processing",
-      journal: "International Journal of Artificial Intelligence",
-      date: "June 2023",
-      abstract: "This paper explores innovative deep learning techniques for natural language processing, focusing on transformer architectures and their applications in semantic understanding and generation.",
-      link: "https://example.com/paper1",
-      color: "from-pink-500 to-red-500",
+      title: "Research Paper 1",
+      journal: "Software Engineering Techniques for Building Adaptive Awareness in Robotic Systems",
+      date: "2024",
+      abstract: "Explores strategies to engineer adaptive behavior in robotic systems through intelligent software design.",
+      link: "https://prachikotadia.github.io/prachiKotadia/static/media/SE_ResearchPaper.dc470da4625f563f310c.pdf",
+      color: "from-indigo-400 to-violet-500",
+      emoji: "💻"
+    },
+    {
+      title: "Research Paper 2",
+      journal: "Emotional Intelligence in AI Quality Assurance: Ensuring Empathetic and Culturally Sensitive AI Interactions",
+      date: "2024",
+      abstract: "Discusses the role of emotional and cultural intelligence in testing and evaluating AI-driven systems.",
+      link: "https://prachikotadia.github.io/prachiKotadia/static/media/SQM_ResearchPaper.575492264598d7d63e9b.pdf",
+      color: "from-yellow-400 to-amber-400",
       emoji: "🧠"
     },
     {
-      title: "Optimizing Convolutional Neural Networks for Edge Computing",
-      journal: "IEEE Transactions on Pattern Analysis",
-      date: "March 2022",
-      abstract: "A comprehensive study on techniques to optimize CNN models for resource-constrained edge devices while maintaining accuracy and performance benchmarks.",
-      link: "https://example.com/paper2",
-      color: "from-yellow-500 to-amber-500",
-      emoji: "⚡"
-    },
-    {
-      title: "Blockchain Solutions for Secure Distributed AI Systems",
-      journal: "Journal of Cybersecurity Technologies",
-      date: "November 2022",
-      abstract: "This research proposes a novel framework for integrating blockchain technologies with distributed AI systems to enhance security, privacy, and data integrity.",
-      link: "https://example.com/paper3",
-      color: "from-green-500 to-emerald-500",
-      emoji: "🔒"
-    },
-    {
-      title: "Quantum Computing Applications in Machine Learning",
-      journal: "Quantum Computing Research",
-      date: "August 2023",
-      abstract: "An exploration of potential applications of quantum computing principles to accelerate machine learning algorithms and solve complex optimization problems.",
-      link: "https://example.com/paper4",
-      color: "from-blue-500 to-cyan-500",
-      emoji: "⚛️"
+      title: "Report",
+      journal: "Continuous Integration and Continuous Deployment, DevOps, and MLOps",
+      date: "2023",
+      abstract: "A technical overview of CI/CD processes and DevOps practices with a focus on modern ML pipelines.",
+      link: "https://prachikotadia.github.io/prachiKotadia/static/media/Final_Term_Paper_SPM.a61cf3aa573986568623.pdf",
+      color: "from-rose-400 to-pink-400",
+      emoji: "📱"
     }
   ];
+  
   
   // Show a confetti effect when a card is flipped
   const toggleFlip = (index: number) => {
@@ -96,7 +88,7 @@ const ResearchPapers = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-display font-bold mb-4 text-gradient relative inline-flex items-center">
             <Sparkles className="mr-2 h-6 w-6 text-primary animate-pulse-glow" />
-            Research Publications
+            Research & Report
             <Sparkles className="ml-2 h-6 w-6 text-primary animate-pulse-glow" style={{animationDelay: '0.5s'}} />
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

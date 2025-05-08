@@ -8,44 +8,51 @@ const Blog = () => {
   
   const blogPosts = [
     {
-      title: "Building Responsive UIs with Tailwind CSS",
-      excerpt: "Learn how to create beautiful responsive interfaces with minimal CSS using the utility-first approach of Tailwind.",
-      date: "May 15, 2023",
-      readTime: "8 min read",
+      title: "Google Gemini Threat Reply: A Conversation With the Void",
+      excerpt: "Is Gemini’s threat a one-off incident, or a warning sign that our relationship with AI needs a serious reset?",
+      date: "February 22, 2025",
+      readTime: "2 min read",
       category: "Frontend",
-      image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      comments: 12,
-      likes: 45
+      link: "https://medium.com/@iprachikotadia/google-gemini-threat-reply-a-conversation-with-the-void-7929a0e845d9",
+      image : "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*3v2yQWC53yo6P9P2.JPG",
+
     },
     {
-      title: "State Management in React: Context API vs Redux",
-      excerpt: "A comprehensive comparison of different state management approaches in React applications.",
-      date: "April 22, 2023",
-      readTime: "12 min read",
-      category: "React",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      comments: 24,
-      likes: 78
+      title: "The Easiest Way to Understand Data Structures and Algorithms: Visualize It!",
+      excerpt: "The key to understanding algorithms is not just reading about them — it’s seeing them in action.",
+      date: "February 23, 2025",
+      readTime: "3 min read",
+      category: "Computer Science",
+      link: "https://medium.com/@iprachikotadia/the-easiest-way-to-understand-data-structures-and-algorithms-visualize-it-baa2f3e70f97",
+      image : "https://miro.medium.com/v2/resize:fit:640/format:webp/0*Q08MjFYMKB-d3ECR.png"
     },
     {
-      title: "Getting Started with TypeScript in 2023",
-      excerpt: "A beginner's guide to setting up and using TypeScript for your JavaScript projects.",
-      date: "March 8, 2023",
-      readTime: "10 min read",
-      category: "TypeScript",
-      image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      comments: 8,
-      likes: 32
+      title: "Learn About Color Contrast in UI/UX Design: A Unique Approach",
+      excerpt: "contrast isn’t just about what’s seen — it’s about what’s felt.",
+      date: "February 21, 2025",
+      readTime: "2 min read",
+      category: "UI/UX Design",
+      link: "https://medium.com/@iprachikotadia/learn-about-color-contrast-in-ui-ux-design-a-unique-approach-3b27f5f4d5a2",
+      image : "https://miro.medium.com/v2/resize:fit:720/format:webp/0*TQW8xTDPARjEcO-5",
     },
     {
-      title: "The Power of GraphQL for Frontend Developers",
-      excerpt: "Discover how GraphQL can simplify your API interactions and improve application performance.",
-      date: "February 14, 2023",
-      readTime: "15 min read",
-      category: "GraphQL",
-      image: "https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      comments: 19,
-      likes: 67
+      title: "AI Will Not Replace You, But People Who Are Using AI Can!",
+      excerpt: "AI is a companion, not a competitor.",
+      date: "February 21, 2025",
+      readTime: "2 min read",
+      category: "Artificial Intelligence",
+      link: "https://medium.com/@iprachikotadia/ai-will-not-replace-you-but-people-who-are-using-ai-can-d83d24a58990",
+      image : "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*IzMqNqlCmarQAK6q",
+
+    },
+    {
+      title: "Sophia Robot: A Woman Without a Heart",
+      excerpt: "Sophia might be a woman without a heart, but her existence challenges the very nature of what it means to be alive.",
+      date: "February 21, 2025",
+      readTime: "2 min read",
+      category: "AI & Robotics",
+      link: "https://medium.com/@iprachikotadia/sophia-robot-a-woman-without-a-heart-ff1634939d26",
+      image : "https://miro.medium.com/v2/resize:fit:720/format:webp/0*b0G5JXsKBC8hJLmQ.jpg",
     }
   ];
 
@@ -88,11 +95,11 @@ const Blog = () => {
                       <div className="flex items-center space-x-3 text-white/90">
                         <div className="flex items-center">
                           <MessageCircle className="h-3.5 w-3.5 mr-1" />
-                          <span className="text-xs">{post.comments}</span>
+                          <span className="text-xs">{}</span>
                         </div>
                         <div className="flex items-center">
                           <Heart className="h-3.5 w-3.5 mr-1" />
-                          <span className="text-xs">{post.likes}</span>
+                          <span className="text-xs">{}</span>
                         </div>
                       </div>
                     </div>
@@ -115,7 +122,10 @@ const Blog = () => {
                     
                     <p className="text-muted-foreground mb-4 text-sm line-clamp-2">{post.excerpt}</p>
                     
-                    <div 
+                    <a
+                      href={post.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center text-sm font-medium text-primary"
                     >
                       <span className="relative group-hover:mr-6 transition-all duration-300">
@@ -127,7 +137,8 @@ const Blog = () => {
                         className="h-4 w-4 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-2
                         transition-all duration-300"
                       />
-                    </div>
+                    </a>
+
                   </CardContent>
                 </Card>
               </div>

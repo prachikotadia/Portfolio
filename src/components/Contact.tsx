@@ -64,7 +64,7 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your Name" 
+                  placeholder="Your name" 
                   required
                   className="backdrop-blur-sm bg-white/5 border-primary/20 focus:border-primary/60 h-12"
                 />
@@ -135,22 +135,11 @@ const Contact = () => {
                 <div>
                   <h4 className="font-display font-medium mb-1">Email</h4>
                   <a href="mailto:example@example.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    example@example.com
+                    iprachikotadia@gmail.com
                   </a>
                 </div>
               </div>
-              
-              <div className="flex items-start">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mr-4">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-display font-medium mb-1">Phone</h4>
-                  <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                    +1 (234) 567-890
-                  </a>
-                </div>
-              </div>
+
               
               <div className="flex items-start">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mr-4">
@@ -159,7 +148,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-display font-medium mb-1">Location</h4>
                   <p className="text-muted-foreground">
-                    San Francisco, California
+                    Chicago, India
                   </p>
                 </div>
               </div>

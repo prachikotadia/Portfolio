@@ -16,7 +16,7 @@ import { useToast } from "@/hooks/use-toast";
 const frontendProjects = [
   {
     id: 1,
-    name: "E-Commerce Dashboard",
+    name: "Product Launch Website",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     description: "Modern dashboard with real-time analytics and user management",
     technologies: ["React", "Tailwind CSS", "Redux"],

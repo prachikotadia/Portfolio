@@ -6,8 +6,9 @@ export interface ProjectType {
   description: string;
   tags: string[];
   image: string;
-  githubUrl: string;
-  liveUrl: string;
-  icon: ReactNode;
-  emoji: string;
+  githubUrl: string;    
+  iconComponent?: string;
+  iconColor?: string;
+  emoji?: string;
+  icon?: React.ReactNode;
 }

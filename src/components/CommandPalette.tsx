@@ -30,9 +30,9 @@ const navigationItems = [
 
 // Define commands for actions
 const actionItems = [
-  { name: "Download Resume", action: () => window.open('/resume.pdf', '_blank') },
+  { name: "Download Resume", action: () => window.open('/Prachi_Kotadia_Resume_2025.pdf', '_blank') },
   { name: "Copy Email", action: () => {
-    navigator.clipboard.writeText('example@example.com');
+    navigator.clipboard.writeText('iprachikotadia@gmail.com');
     // Show toast notification
     console.log('Email copied to clipboard');
   }}
@@ -40,9 +40,8 @@ const actionItems = [
 
 // Define external links
 const externalLinks = [
-  { name: "GitHub", href: "https://github.com" },
-  { name: "LinkedIn", href: "https://linkedin.com" },
-  { name: "Twitter", href: "https://twitter.com" }
+  { name: "GitHub", href: "https://github.com/prachikotadia" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/prachi-kotadia/" },
 ];
 
 const CommandPalette = () => {

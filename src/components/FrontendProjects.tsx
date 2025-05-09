@@ -18,51 +18,31 @@ const frontendProjects = [
     id: 1,
     name: "Product Launch Website",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    description: "Modern dashboard with real-time analytics and user management",
-    technologies: ["React", "Tailwind CSS", "Redux"],
-    link: "https://example.com/ecommerce",
-    github: "https://github.com/yourusername/ecommerce-dashboard",
+    description: "Showcase a new tech product with cinematic scroll animations, 3D renders, and interactive transitions. Website with a non-overlapping, cinematic, 3D, parallax scroll feel — tailored for light/dark themes, Framer Motion, GSAP, and glassmorphism.",
+    technologies: ["TypeScript"],
+    link: "https://product-intro.netlify.app/",
+    github: "https://github.com/prachikotadia/parallax-product-pulse",
     color: "from-purple-500/20 to-pink-500/20"
   },
   {
     id: 2,
-    name: "Travel Explorer App",
+    name: "Atlternate Future App",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    description: "Interactive travel planner with map integrations",
-    technologies: ["Next.js", "TypeScript", "Mapbox"],
-    link: "https://example.com/travel",
-    github: "https://github.com/yourusername/travel-explorer",
+    description: "FutureBeyond is a modern React-based web application that explores alternate future scenarios through interactive storytelling and thematic visuals.",
+    technologies: [ "TypeScript"],
+    link: "https://futurebeyond.netlify.app/",
+    github: "https://github.com/prachikotadia/alternate-journey-creator",
     color: "from-blue-500/20 to-cyan-500/20"
   },
   {
     id: 3,
-    name: "Social Media Platform",
+    name: "Fitness Tracker",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    description: "Feature-rich social networking interface",
-    technologies: ["Vue.js", "Firebase", "TailwindCSS"],
-    link: "https://example.com/social",
-    github: "https://github.com/yourusername/social-platform",
+    description: "This website is a modern Health Dashboard UI for HealthAssist AI, providing users with a personalized overview of their daily health metrics. It features a sleek dark theme with clean, accessible cards displaying steps, heart rate, water intake, sleep, and a timeline of daily activities. The intuitive side navigation allows easy access to detailed health categories like nutrition, workouts, vaccine records, and more.",
+    technologies: ["TypeScript.js"],
+    link: "https://stayhealty.netlify.app/",
+    github: "https://github.com/prachikotadia/fitnesstrove",
     color: "from-green-500/20 to-emerald-500/20"
-  },
-  {
-    id: 4,
-    name: "Streaming Service UI",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
-    description: "Video streaming platform with personalized recommendations",
-    technologies: ["React", "Styled Components", "Node.js"],
-    link: "https://example.com/streaming",
-    github: "https://github.com/yourusername/streaming-ui",
-    color: "from-amber-500/20 to-orange-500/20"
-  },
-  {
-    id: 5,
-    name: "Productivity Dashboard",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    description: "Task management and productivity tracking tools",
-    technologies: ["React", "Chart.js", "Material UI"],
-    link: "https://example.com/productivity",
-    github: "https://github.com/yourusername/productivity-dashboard",
-    color: "from-red-500/20 to-rose-500/20"
   }
 ];
 

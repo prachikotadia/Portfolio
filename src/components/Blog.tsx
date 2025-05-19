@@ -152,7 +152,7 @@ const Blog = () => {
                 shadow-md hover:shadow-lg hover:bg-primary/90 transition-all duration-300
                 animate-pulse-glow"
             >
-              <span>View all posts</span>
+              <span>View Profile</span>
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </div>

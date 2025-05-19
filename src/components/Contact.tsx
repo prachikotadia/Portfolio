@@ -148,7 +148,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-display font-medium mb-1">Location</h4>
                   <p className="text-muted-foreground">
-                    Chicago, India
+                    Chicago, USA
                   </p>
                 </div>
               </div>
